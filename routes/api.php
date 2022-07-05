@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('cars', CarController::class)->except(['create', 'edit']);
+Route::resource('cars', CarController::class);
