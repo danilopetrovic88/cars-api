@@ -16,7 +16,7 @@ class CarController extends Controller
      */
     public function index(Request $request)
     {
-        $per_page = $request->query('per_page', 3);
+        $per_page = $request->query('per_page', 10);
         $carBrand = $request->query('brand');
         $carModel = $request->query('model');
 
